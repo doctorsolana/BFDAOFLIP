@@ -14,7 +14,12 @@ const Wrapper = styled.div`
   align-items: center;
   grid-template-columns: auto 1fr max-content;
   width: 100%;
-  background: var(--header-bg-color);
+  font-size: 25px;
+  text-shadow: 
+    3px 3px 0px #4f5290, // Offset x, y, blur and color
+    6px 6px 0px #a79de0,
+    9px 9px 0px #7672bd,
+    12px 12px 0px #185469; // This creates a 3D effect
   backdrop-filter: blur(10px);
   z-index: 10;
   position: fixed;
@@ -63,16 +68,13 @@ export function Header() {
     <Wrapper>
       <NavigationLink to="/">
         <Logo src="/logo.png" />
-        <div className="label">Gamba Demo</div>
+        <div className="label">BoyFirend DAO</div>
       </NavigationLink>
       <Links>
-        <a target="_blank" href="https://github.com/gamba-labs/gamba" rel="noreferrer">
-          <FaGithub />
-        </a>
-        <a target="_blank" href="http://discord.gg/xjBsW3e8fK" rel="noreferrer">
+        <a target="_blank" href="https://discord.com/invite/DvjPhQfBsQ" rel="noreferrer">
           <FaDiscord />
         </a>
-        <a target="_blank" href="https://twitter.com/GambaLabs" rel="noreferrer">
+        <a target="_blank" href="https://twitter.com/BoyfriendDAO" rel="noreferrer">
           <FaTwitter />
         </a>
       </Links>

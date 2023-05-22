@@ -1,4 +1,5 @@
 import styled, { DefaultTheme, createGlobalStyle, keyframes } from 'styled-components'
+import "../src/assets/fonts/style.css"
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -13,10 +14,10 @@ declare module 'styled-components' {
 
 export const theme: DefaultTheme = {
   palette: {
-    background: '#080809',
+    background: '#1c014f',
     backgroundLight: '#1a1c24',
-    textColor: '#ffffff',
-    primary: '#ff335c',
+    textColor: '#36e1b8',
+    primary: '#36e1b8',
   },
 }
 
@@ -66,9 +67,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea, pre {
-    font-family: 'Roboto Mono', monospace;
+    font-family:  'Lo-Res','Roboto Mono', monospace;
     font-display: block;
-    font-size: 14px;
+    font-size: 18px;
   }
   button, a {
     cursor: pointer;
