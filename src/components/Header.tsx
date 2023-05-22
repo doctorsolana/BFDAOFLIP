@@ -68,7 +68,7 @@ export function Header() {
     <Wrapper>
       <NavigationLink to="/">
         <Logo src="/logo.png" />
-        <div className="label">BoyFirend DAO</div>
+        <div className="label">BoyFriend DAO</div>
       </NavigationLink>
       <Links>
         <a target="_blank" href="https://discord.com/invite/DvjPhQfBsQ" rel="noreferrer">
